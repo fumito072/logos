@@ -1,0 +1,25 @@
+{
+  "name": "pinterest-logo-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Prototype pipeline that turns Pinterest boards into a logo preference profile and SVG logo assets.",
+  "scripts": {
+    "auth:pinterest": "tsx src/cli.ts auth:pinterest",
+    "fetch:pinterest": "tsx src/cli.ts fetch:pinterest",
+    "analyze": "tsx src/cli.ts analyze",
+    "generate:logo": "tsx src/cli.ts generate:logo",
+    "pipeline": "tsx src/cli.ts pipeline",
+    "sample": "tsx src/cli.ts sample",
+    "build": "tsc --noEmit",
+    "test": "node --test --import tsx tests/*.test.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.4",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}

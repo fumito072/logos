@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+.secrets/
+node_modules/
+data/*.json
+!data/.gitkeep
+output/tmp/
+.DS_Store
+npm-debug.log*

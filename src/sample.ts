@@ -1,0 +1,107 @@
+import type { PinterestDataset } from "./types.js";
+
+export const sampleDataset: PinterestDataset = {
+  fetchedAt: new Date("2026-06-24T00:00:00.000Z").toISOString(),
+  source: "sample",
+  accountUrl: "https://jp.pinterest.com/",
+  boards: [
+    {
+      board: {
+        id: "sample-quiet-luxury",
+        name: "Quiet luxury identity",
+        description: "Warm black, ivory, editorial serif, quiet negative space.",
+      },
+      pins: [
+        {
+          id: "sample-1",
+          title: "ivory business card with black editorial wordmark",
+          description: "minimal, tactile paper, wide tracking, small-scale legible",
+          altText: "",
+          link: "",
+          imageUrl: "",
+          dominantColor: "#f6f0e7",
+          boardId: "sample-quiet-luxury",
+          boardName: "Quiet luxury identity",
+          source: "board",
+        },
+        {
+          id: "sample-2",
+          title: "black serif logo on stone background",
+          description: "calm museum atmosphere and high contrast serif",
+          altText: "",
+          link: "",
+          imageUrl: "",
+          dominantColor: "#12100d",
+          boardId: "sample-quiet-luxury",
+          boardName: "Quiet luxury identity",
+          source: "board",
+        },
+      ],
+      sections: [],
+    },
+    {
+      board: {
+        id: "sample-organic-mesh",
+        name: "Organic mesh objects",
+        description: "Vessel, pebble, mesh, monolith, soft asymmetric forms.",
+      },
+      pins: [
+        {
+          id: "sample-3",
+          title: "abstract vessel mark with mesh texture",
+          description: "organic geometric silhouette, restrained detail, solid mark",
+          altText: "",
+          link: "",
+          imageUrl: "",
+          dominantColor: "#8d8982",
+          boardId: "sample-organic-mesh",
+          boardName: "Organic mesh objects",
+          source: "board",
+        },
+      ],
+      sections: [
+        {
+          section: { id: "sample-section-1", name: "Stone and vessel" },
+          pins: [
+            {
+              id: "sample-4",
+              title: "pebble base and ritual object silhouette",
+              description: "future craft, calm precision, no cute mascot, no 3D gloss",
+              altText: "",
+              link: "",
+              imageUrl: "",
+              dominantColor: "#a85f49",
+              boardId: "sample-organic-mesh",
+              boardName: "Organic mesh objects",
+              sectionId: "sample-section-1",
+              sectionName: "Stone and vessel",
+              source: "section",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      board: {
+        id: "sample-technical-editorial",
+        name: "Technical editorial",
+        description: "AI, robotics, laboratory, precise systems, black and ivory.",
+      },
+      pins: [
+        {
+          id: "sample-5",
+          title: "laboratory identity with fine lines and editorial spacing",
+          description: "technical but calm, single-color first, abstract mark plus editorial wordmark",
+          altText: "",
+          link: "",
+          imageUrl: "",
+          dominantColor: "#6e746d",
+          boardId: "sample-technical-editorial",
+          boardName: "Technical editorial",
+          source: "board",
+        },
+      ],
+      sections: [],
+    },
+  ],
+};
